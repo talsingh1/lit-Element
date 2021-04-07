@@ -4,8 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>&lt;my-element> Demo</title>
-    <script type="module" src="../my-element.js"></script>
-    <script type="module" src="../my-element-two.js"></script>
+    <script src="widget.js" ></script>
+    <!-- <script type="module" src="../my-element.js"></script>
+    <script type="module" src="../my-element-two.js"></script> -->
     <style>
       p {
         border: solid 1px blue;
@@ -14,7 +15,10 @@
     </style>
   </head>
   <body>
-    <my-element name="publicis"></my-element>
-    <my-element-two name="sapient"></my-element-two>
+    <h1>LitElements dynamically added</h1>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
   </body>
 </html>

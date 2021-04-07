@@ -43,6 +43,7 @@ export class MyElementTwo extends LitElement {
        * The number of times the button has been clicked.
        */
       count: {type: Number},
+      color: {type: String}
     };
   }
 
@@ -54,7 +55,7 @@ export class MyElementTwo extends LitElement {
 
   render() {
     return html`
-      <h1>Hello, ${this.name}! This is Element two</h1>
+      <h1 style='color:${this.color}'>Hello, ${this.name}! This is Element two</h1>
       <slot></slot>
     `;
   }

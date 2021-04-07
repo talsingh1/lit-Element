@@ -12,7 +12,7 @@
  * http://polymer.github.io/PATENTS.txt
  */
 
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from './node_modules/lit-element/lit-element.js'
 
 /**
  * An example element.
@@ -43,6 +43,8 @@ export class MyElement extends LitElement {
        * The number of times the button has been clicked.
        */
       count: {type: Number},
+
+      color: {type: String}
     };
   }
 
@@ -54,7 +56,7 @@ export class MyElement extends LitElement {
 
   render() {
     return html`
-      <h1>Hello, ${this.name}! This is Element one</h1>
+      <h1 style='color:${this.color}'>Hello, ${this.name}! This is Element one</h1>
       <slot></slot>
     `;
   }
